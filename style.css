@@ -1,0 +1,47 @@
+#att {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#first, #second {
+    display: flex;
+    height: 150px;
+}
+
+#first {
+    width: 300px;
+    background: red;
+    order: 1;
+}
+
+#second {
+    width: 150px;
+    background: blue;
+    order: 2;
+}
+
+@media screen and (max-width: 768px) {
+    #att {
+        flex-flow: column nowrap;
+        align-items: center;
+        align-content: center;
+    }
+
+    #first {
+        order: 2;
+        height: 300px;
+        width: 150px;
+    }
+
+}
+
+#second {
+    order: 1;
+
+}
+
+
+
